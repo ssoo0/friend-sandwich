@@ -140,7 +140,7 @@ $N=8000$ で $L≒2$ となり理想の集団の上限に最も近い。
 3. Newman, M. E., Strogatz, S. H., & Watts, D. J. (2001). Random graphs with arbitrary degree distributions and their applications. Physical review E, 64(2), 026118.
 4. かなり人為的なcutoffのため、改善の余地がある。たとえば、Lognormal分布のような連続分布ではなく、有限のsupportをもつ離散分布を使ったり、facebookデータではない現実の友人数のデータにfitする別の分布を使うなど。
 5. 参考までに、今回は `Intel Core i5-6360U` の1CPUで実行した。$N=60,000$ で16時間ほど、平均距離ノード間距離の算出に時間を要した。
-- このRepositoryで必要なライブラリは、pythonの基本的なライブラリと、[NetworkX](https://networkx.org/) だけである。
+- このRepositoryを作るためのソースコードはすべてここに載せている。また、ソースコードを実行するのに必要なライブラリはPythonの基本的なライブラリと、[NetworkX](https://networkx.org/) だけである。
 - [node-distance.csv](node-distance.csv) は、図6を出力するための数値データ。[network-length.py](network-length.py) を実行することで得られる。
 - [images-for-readme.ipynb](images-for-readme.ipynb) は、この `README.md` で使われた図を作るソースコード。
 - スモールワールド性について。スモールワールドはネットワーク理論において最重要な性質であるが、図6-2が直線( $L \sim \log N$) であればその性質を満たす。
