@@ -6,7 +6,10 @@ import networkx as nx
 import random
 import csv
 
+# 平均ノード間距離を求める
+
 ###########################################
+# 設定
 # ここでノード数を決める
 node_min = 100
 node_max = 1000
